@@ -9,8 +9,6 @@
     const window = typeof unsafeWindow !== "undefined" ? unsafeWindow : w;
     const campaignId = 9999999; // Replace with the correct campaign ID
 
-    if (window[tag + "-shared"]) return;
-
     window[tag + "-shared"] = {
         imgPath: "https://d1mgcpums0qvsa.cloudfront.net/<<<CLIENT_CODE>>>/<<<EXPERIMENT_NUMBER>>>/",
         waitUntil: function (condition, wait = 5000) {
